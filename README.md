@@ -1,0 +1,2 @@
+# ImageAestheticsAssessment
+图像美学质量评估研究
