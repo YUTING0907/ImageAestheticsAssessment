@@ -1,0 +1,24 @@
+models:
+  backbone: resnet18
+  pretrained: true
+
+data:
+  dataset: AADB
+  image_dir: /home/ps/temp/yt/EVA/deep-aesthetics-pytorch/data/eva-dataset-master/images/EVA_together
+  labels_dir: /home/ps/temp/yt/EVA/deep-aesthetics-pytorch/data/eva-dataset-master/data
+  model_path : /home/ps/temp/yt/EVA/deep-aesthetics-pytorch/pretrain_model/relic2_epoch_38_srcc_0.734_lcc_0.744_loss_1.0425_.pt
+  num_attributes: 1
+  input_shape: [256, 256]
+  batch_size: 64
+
+train:
+  epochs: 40
+  lr: 3E-4
+  momentum: 0.9
+  margin: 0.02
+  rank_weight: 1.0
+  num_prefetch: 8
+  log_interval: 10
+  save_dir: /home/ps/temp/yt/EVA/deep-aesthetics-pytorch/checkpoints
+  
+device: cuda
