@@ -1,0 +1,8 @@
+torch
+torchvision
+numpy
+scipy
+pillow
+tqdm
+omegaconf
+gdown
